@@ -27,8 +27,8 @@ def process_args(args):
         logger.info("Creating run")
         with wandb.init(job_type="download_data") as run:
             # Load the file
-            # od.download(args.file_url)
-            with open("creditcard.csv", 'rb') as file:
+            od.download(args.file_url)
+            with open("./creditcard.csv", 'rb') as file:
                 fp.writelines(file)
             # Download the file streaming and write to open temp file
             # with requests.get(args.file_url, stream=True) as r:
