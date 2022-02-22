@@ -1,8 +1,3 @@
-"""
-Creator: Ivanovitch Silva
-Date: 20 Fev. 2022
-Download the raw data
-"""
 import argparse
 import logging
 import pathlib
