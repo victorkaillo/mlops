@@ -15,7 +15,7 @@ main:
 data:
   train_data: "mlops-creditcard_fraud_predictive/train_data.csv:latest"
   file_url: "https://www.kaggle.com/mlg-ulb/creditcardfraud.csv"
-  reference_dataset: "mlops-creditcard_fraud_predictive/ccfraud_preprocessed.csv:latest"
+  reference_dataset: "mlops-creditcard_fraud_predictive/raw_data.csv:latest"
   # Threshold for Kolomorov-Smirnov test
   ks_alpha: 0.05
   test_size: 0.3

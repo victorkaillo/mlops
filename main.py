@@ -53,7 +53,7 @@ def process_args(config: DictConfig):
             "main",
             parameters={
                 "reference_artifact": config["data"]["reference_dataset"],
-                "sample_artifact": "preprocessed_data.csv:latest",
+                "sample_artifact": "raw_data.csv:latest",
                 "ks_alpha": config["data"]["ks_alpha"]
             }
         )
@@ -64,7 +64,7 @@ def process_args(config: DictConfig):
             os.path.join(root_path, "segregate"),
             "main",
             parameters={
-                "input_artifact": "preprocessed_data.csv:latest",
+                "input_artifact": "raw_data.csv:latest",
                 "artifact_root": "data",
                 "artifact_type": "segregated_data",
                 "test_size": config["data"]["test_size"],

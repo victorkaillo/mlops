@@ -42,4 +42,4 @@ def ks_alpha(request):
 
 # mlflow run . -P reference_artifact="mlops-week_09_Example_01_segregate/train_data.csv:latest" \
 #              -P sample_artifact="mlops-week_09_Example_01_segregate/test_data.csv:latest" \
-#              -P ks_alpha=0.05
+#              -P ks_a
