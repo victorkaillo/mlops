@@ -67,7 +67,7 @@ def process_args(args):
     ConfusionMatrixDisplay(confusion_matrix(predict,
                                             y_test,
                                             labels=[1,0]),
-                           display_labels=[">50k","<=50k"]
+                           display_labels=["1","0"]
                           ).plot(values_format=".0f",ax=ax)
     ax.set_xlabel("True Label")
     ax.set_ylabel("Predicted Label")
